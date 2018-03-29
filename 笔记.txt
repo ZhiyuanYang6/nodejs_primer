@@ -1,0 +1,63 @@
+学习资料
+nodejs社区：		https://cnodejs.org/
+阮一峰大佬的书：	javascript.ruanyifeng.com/nodejs/basic.html
+nodejs里的资料：	http://nqdeng.github.io/7-days-nodejs/
+
+如何学习一门新的编程语言
+1、了解背景：历史、现状、发展、特点、应用领域
+2、搭建环境
+3、数据类型
+4、变量常量
+5、运算符
+6、逻辑结构
+7、通用程序
+8、函数对象
+9、常用函数库、类库、中间件、框架
+10、实用的项目
+
+nodejs学习进程
+
+一、了解背景：历史、现状、发展、特点、应用领域
+历史：2009年5月，由Ryan Dahl开发
+特点：事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。
+现状：成熟的开发平台、许多大型高流量网站都采用Node.JS进行开发
+发展：very good
+应用领域：服务器DOM层
+
+二、搭建环境
+
+三、数据类型
+
+
+
+day01
+node概述
+一、安装与更新
+略
+二、版本管理工具nvm
+略
+三、基本用法
+1.node 带js文件
+2.node -e 带代码字符串
+3.REPL环境：node进入REPL环境 --use_strict严格模式
+_表示上一个命令的结果
+4.异步操作
+   1、单线程运行
+5、全局对象和全局变量
+全局对象
+global 全局环境类型js中window
+process 当前进程
+console console模块提供标准输入、输出功能
+全局函数
+setTimeout()定时器
+clearTimeout()停止定时器
+
+
+
+
+
+
+
+
+
+

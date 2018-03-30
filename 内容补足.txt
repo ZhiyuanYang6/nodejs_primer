@@ -1,0 +1,27 @@
+一、CommonJS模块规范
+1.意义：弥补JavaScript没有标准的缺陷，已达到像Python、Ruby和Java那样具备开发大型应用的基础能力
+
+2.使用方法：模块引用、模块定义、模块标识
+
+2.1模块引用
+var math=require（'math');
+规则1：使用require（)方法，引入math模块，并赋值给变量math
+规则2：没有带有路径，引用的是a.js所在当前目录下的node_modules目录下的math模块。
+规则3：如果要引入的模块在其他路径，就需要使用到相对路径或者绝对路径
+var add=require('./add.js')
+
+2.2模块定义
+module对象：模块中代表该对象自身
+function add(num1,num2){
+    alert(num1+num2);
+}
+export属性：module对象的属性，向外提供接口
+exports.add=function (num1,num2){
+    alert(num1+num2);
+}
+
+3.3、模块标识
+传递给require方法的参数必须是符合:
+1、小驼峰命名的字符串
+2、以  ./   ../   开头的相对路径
+3、绝对路径

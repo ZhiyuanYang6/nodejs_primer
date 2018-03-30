@@ -1,56 +1,104 @@
-ѧϰ����
-nodejs������		https://cnodejs.org/
-��һ����е��飺	javascript.ruanyifeng.com/nodejs/basic.html
-nodejs������ϣ�	http://nqdeng.github.io/7-days-nodejs/
+学习资料
+nodejs社区：		https://cnodejs.org/
+阮一峰大佬的书：	javascript.ruanyifeng.com/nodejs/basic.html
+nodejs里的资料：	http://nqdeng.github.io/7-days-nodejs/
 
-���ѧϰһ���µı������
-1���˽ⱳ������ʷ����״����չ���ص㡢Ӧ������
-2�������
-3����������
-4����������
-5�������
-6���߼��ṹ
-7��ͨ�ó���
-8����������
-9�����ú����⡢��⡢�м�������
-10��ʵ�õ���Ŀ
+如何学习一门新的编程语言
+1、了解背景：历史、现状、发展、特点、应用领域
+2、搭建环境
+3、数据类型
+4、变量常量
+5、运算符
+6、逻辑结构
+7、通用程序
+8、函数对象
+9、常用函数库、类库、中间件、框架
+10、实用的项目
 
-nodejsѧϰ����
+nodejs学习进程
 
-һ���˽ⱳ������ʷ����״����չ���ص㡢Ӧ������
-��ʷ��2009��5�£���Ryan Dahl����
-�ص㣺�¼������� ������I/O ģ�Ͷ����������͸�Ч���ǳ��ʺ��ڷֲ�ʽ�豸�����������ܼ��͵�ʵʱӦ�á�
-��״������Ŀ���ƽ̨��������͸�������վ������Node.JS���п���
-��չ��very good
-Ӧ�����򣺷�����DOM��
+一、了解背景：历史、现状、发展、特点、应用领域
+历史：2009年5月，由Ryan Dahl开发
+特点：事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。
+现状：成熟的开发平台、许多大型高流量网站都采用Node.JS进行开发
+发展：very good
+应用领域：服务器DOM层
 
-���������
+二、搭建环境
 
-������������
-
+三、数据类型
 
 
 day01
-node����
-һ����װ�����
-��
-�����汾��������nvm
-��
-���������÷�
-1.node ��js�ļ�
-2.node -e �������ַ���
-3.REPL������node����REPL���� --use_strict�ϸ�ģʽ
-_��ʾ��һ������Ľ��
-4.�첽����
-   1�����߳�����
-5��ȫ�ֶ����ȫ�ֱ���
-ȫ�ֶ���
-global ȫ�ֻ�������js��window
-process ��ǰ����
-console consoleģ���ṩ��׼���롢�������
-ȫ�ֺ���
-setTimeout()��ʱ��
-clearTimeout()ֹͣ��ʱ��
+node概述
+一、安装与更新
+略
+二、版本管理工具nvm
+略
+三、基本用法
+1.node 带js文件
+2.node -e 带代码字符串
+3.REPL环境：node进入REPL环境 --use_strict严格模式
+_表示上一个命令的结果
+4.异步操作
+   1、单线程运行
+
+
+5、全局对象和全局变量
+
+全局对象*************
+global 全局环境类型js中window
+process 当前进程
+console console模块提供标准输入、输出功能
+
+全局函数****************
+setTimeout()定时器
+clearTimeout()停止定时器
+setInterval()每隔时间的回调函数
+clearInterval()终止setInterval定时器
+require()加载模块
+Buffer()操作二进制数据
+
+全局变量**********
+__filename:指向当前运行的脚本文件名
+__dirname:指向当前运行的脚本所在的目录。
+
+
+二、模块化结构
+2.1概述
+1、Node.js采用模块化结构，按照CommonJS规范定义和使用模块。（参照补充内容第一条）
+2、require命令用于指定加载模块
+var circle = require('./circle.js');
+var circle = require('./circle');
+var bar = require('bar');
+
+2.2核心模块
+意义：Node.js的用处在于，它本身还提供了一系列功能模块，与操作系统互动。这些核心的功能模块，不用安装就可以使用
+(1)、http：提供HTTP服务器功能。
+(2)、url：解析URL。
+(3)、fs：与文件系统交互。
+(4)、querystring：解析URL的查询字符串。
+(5)、child_process：新建子进程。
+(6)、util：提供一系列实用小工具。
+(7)、path：处理文件路径。
+(8)、crypto：提供加密和解密功能，基本上是对OpenSSL的包装。
+文档内以有的http fs URL path querystring
+上面这些核心模块，源码都在Node的lib子目录中。为了提高运行速度，它们安装时都会被编译成二进制文件。
+
+2.3自定义模块
+Node模块采用CommonJS规范。只要符合这个规范，就可以自定义模块。
+demo在customBlock
+
+三、异常处理
+Node有三种方法，传播一个错误。
+（1）、使用throw语句抛出一个错误对象，即抛出异常。
+（2）、将错误对象传递给回调函数，由回调函数负责发出错误。
+（3）、通过EventEmitter接口，发出一个error事件。
+
+
+
+
+
 
 
 
